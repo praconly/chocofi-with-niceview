@@ -8,6 +8,85 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        TAB_L {
+            bindings = <&kp TAB>;
+            key-positions = <1 2 3>;
+        };
+
+        ENTER_L {
+            bindings = <&kp ENTER>;
+            key-positions = <3 5 4>;
+        };
+
+        ESC_L {
+            bindings = <&kp ESCAPE>;
+            key-positions = <25 26 27>;
+        };
+
+        VolUp_R {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <8 9>;
+        };
+
+        VolDown_R {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <7 8>;
+        };
+
+        LShift_L {
+            bindings = <&kp LSHIFT>;
+            key-positions = <13 14>;
+        };
+
+        LCtrl_L {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <14 15>;
+        };
+
+        LAlt_L {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <15 16>;
+        };
+
+        LGUI_L {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <16 17>;
+        };
+
+        RShift_R {
+            bindings = <&kp RSHIFT>;
+            key-positions = <22 21>;
+        };
+
+        LCtrl_R {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <21 20>;
+        };
+
+        LAlt_R {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <20 19>;
+        };
+
+        LGUI_R {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <19 18>;
+        };
+
+        RAlt_L {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <13 37>;
+        };
+
+        Set_TO_0 {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
