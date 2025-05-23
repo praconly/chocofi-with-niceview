@@ -28,7 +28,7 @@
 
         layer_1 {
             bindings = <
-&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp ESCAPE      &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &none
                                    &trans         &trans        &trans          &trans  &trans  &trans
@@ -37,16 +37,16 @@
 
         layer_2 {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp ESCAPE     &trans          &kp UP_ARROW    &trans           &kp TAB   &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp INSERT      &kp BACKSPACE   &kp DELETE       &kp END   &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp TAB        &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp INSERT      &kp BACKSPACE   &kp DELETE       &kp END     &none
                        &trans  &trans  &trans    &trans         &trans          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp ESCAPE          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans            &trans            &trans              &trans  &trans  &trans
@@ -55,100 +55,46 @@
 
         layer_4 {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans     &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp APOS        &trans                &trans                 &trans             &none
-                       &trans  &trans  &trans    &trans     &trans          &trans
+&none  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL     &kp APOS        &trans                &trans                 &trans             &none
+                       &trans  &trans  &trans    &trans        &trans          &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &kp APOS  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp TAB        &none           &kp UP_ARROW    &none            &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME      &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp PAGE_DOWN  &kp INSERT      &kp BACKSPACE   &kp DELETE       &kp END       &trans  &trans  &trans  &trans  &trans  &none
+                                      &trans          &trans           &trans        &trans  &trans  &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp SLASH       &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans                 &trans     &trans          &trans  &trans  &trans
             >;
         };
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
