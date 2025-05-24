@@ -8,11 +8,8 @@
 
   main_renderer: renderer {
     compatible = "zmk,display-renderer";
+    draw-text-fn = "layer_name";
     children = <&layer_status &battery_status>;
-  };
-
-  layer_status: layer_status {
-    compatible = "zmk,layer-status";
   };
 
   battery_status: battery_status {
