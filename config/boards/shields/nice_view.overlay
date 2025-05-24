@@ -1,18 +1,26 @@
 / {
-  nice_view {
-    compatible = "zmk,display";
-    label = "NICE_VIEW";
-    displays = <&display>;
-    renderer = <&main_renderer>;
-  };
+    nice_view {
+        compatible = "zmk,display";
+        label = "NICE_VIEW";
+        displays = <&display>;
+        renderer = <&main_renderer>;
+    };
 
-  main_renderer: renderer {
-    compatible = "zmk,display-renderer";
-    draw-text-fn = "layer_name";
-    children = <&layer_status &battery_status>;
-  };
+    main_renderer: renderer {
+        compatible = "zmk,display-renderer";
+        children = <&layer_status &output_status &battery_status>;
+    };
 
-  battery_status: battery_status {
-    compatible = "zmk,battery-status";
-  };
+    layer_status: layer_status {
+        compatible = "zmk,layer-status";
+        draw-text-fn = "layer_name";  // 레이어 이름 표시
+    };
+
+    output_status: output_status {
+        compatible = "zmk,output-status"; // 연결 타입 (USB/BLE)
+    };
+
+    battery_status: battery_status {
+        compatible = "zmk,battery-status"; // 배터리 잔량 표시
+    };
 };
