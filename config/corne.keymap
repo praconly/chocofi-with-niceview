@@ -110,42 +110,49 @@
             bindings = <&mo 7>;
             key-positions = <37 16>;
             layers = <0>;
+            slow-release;
         };
 
         mo_R_func {
             bindings = <&mo 8>;
             key-positions = <40 19>;
             layers = <0>;
+            slow-release;
         };
 
         mo_L_nav {
             bindings = <&mo 4>;
             key-positions = <15 37>;
             layers = <0>;
+            slow-release;
         };
 
         mo_R_num {
             bindings = <&mo 5>;
             key-positions = <40 20>;
             layers = <0>;
+            slow-release;
         };
 
         mo_L_modi {
             bindings = <&mo 9>;
             key-positions = <37 14>;
             layers = <0>;
+            slow-release;
         };
 
         mo_R_modi {
             bindings = <&mo 10>;
             key-positions = <40 21>;
             layers = <0>;
+            slow-release;
         };
 
         mo_L_brk {
             bindings = <&mo 6>;
             key-positions = <37 29>;
             layers = <0>;
+            slow-release;
         };
 
         RAlt_L {
@@ -163,6 +170,7 @@
         to_setting {
             bindings = <&to 14>;
             key-positions = <36 37 40 41>;
+            layers = <0>;
         };
 
         bootload {
@@ -194,8 +202,22 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-        layer_names = "BASE", "L_NUM", "R_NAV", "R_BRK", "L_NAV", "R_NUM","L_BRK","L_FN","R_FN","L_MODI","R_MODI","MOUSE","L_NSP", "MEDIA","SET";
+        layer_names =
+            "BASE",
+            "L_NUM",
+            "R_NAV",
+            "R_BRK",
+            "L_NAV",
+            "R_NUM",
+            "L_BRK",
+            "L_FN",
+            "R_FN",
+            "L_MODI",
+            "R_MODI",
+            "MOUSE",
+            "L_NSP",
+            "MEDIA",
+            "SET";
 
         LR_default {
             // -----------------------------------------------------------------------------------------
