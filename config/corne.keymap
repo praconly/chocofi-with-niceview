@@ -353,10 +353,10 @@
 
         LR_setting {
             bindings = <
-&none  &none  &none   &none      &trans             &trans       &none       &none       &none       &none         &none         &none
-&none  &none  &trans  &soft_off  &ext_power EP_TOG  &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_BLE  &out OUT_USB  &none
-&none  &none  &none   &none      &none              &trans       &none       &none       &none       &none         &none         &none
-                      &trans     &trans             &kp SPACE    &kp ENTER   &trans      &trans
+&none  &none  &none  &none      &kp R              &kp T        &none       &none       &none       &none         &none         &none
+&none  &none  &kp S  &soft_off  &ext_power EP_TOG  &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_BLE  &out OUT_USB  &none
+&none  &none  &none  &none      &none              &kp B        &none       &none       &none       &none         &none         &none
+                     &trans     &trans             &kp SPACE    &kp ENTER   &trans      &trans
             >;
         };
     };
