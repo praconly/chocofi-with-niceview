@@ -45,41 +45,49 @@
         LShift_L {
             bindings = <&kp LSHIFT>;
             key-positions = <13 14>;
+            layers = <0 7 6 1 11>;
         };
 
         LCtrl_L {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
+            layers = <0 1 6 7 11>;
         };
 
         LAlt_L {
             bindings = <&kp LEFT_ALT>;
             key-positions = <15 16>;
+            layers = <0 6 7 11 1>;
         };
 
         LGUI_L {
             bindings = <&kp LEFT_GUI>;
             key-positions = <16 17>;
+            layers = <0 1 6 7 11>;
         };
 
         RShift_R {
             bindings = <&kp RSHIFT>;
             key-positions = <22 21>;
+            layers = <0 3 5 8 11>;
         };
 
         LCtrl_R {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <21 20>;
+            layers = <0 3 5 8 11>;
         };
 
         LAlt_R {
             bindings = <&kp LEFT_ALT>;
             key-positions = <20 19>;
+            layers = <0 3 5 8 11>;
         };
 
         LGUI_R {
             bindings = <&kp LEFT_GUI>;
             key-positions = <19 18>;
+            layers = <0 3 5 8 11>;
         };
 
         RAlt_L {
@@ -91,12 +99,53 @@
             bindings = <&to 0>;
             key-positions = <38 39>;
         };
+
+        mo_L_func {
+            bindings = <&mo 7>;
+            key-positions = <37 16>;
+            layers = <0>;
+        };
+
+        mo_R_func {
+            bindings = <&mo 8>;
+            key-positions = <40 19>;
+            layers = <0>;
+        };
+
+        mo_L_nav {
+            bindings = <&mo 4>;
+            key-positions = <15 37>;
+            layers = <0>;
+        };
+
+        mo_R_num {
+            bindings = <&mo 5>;
+            key-positions = <40 20>;
+            layers = <0>;
+        };
+
+        mo_L_modi {
+            bindings = <&mo 9>;
+            key-positions = <37 13>;
+            layers = <0>;
+        };
+
+        mo_R_modi {
+            bindings = <&mo 10>;
+            key-positions = <22 40>;
+        };
+
+        mo_L_brk {
+            bindings = <&mo 6>;
+            key-positions = <37 14>;
+            layers = <0>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        LR_default {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -104,14 +153,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &mo 3  &mo 1  &kp SPACE    &kp RET  &mo 2  &mo 4
+&none  &kp Q  &kp W  &kp E   &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D   &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C   &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &mo 13  &mo 1  &kp SPACE    &kp RET  &mo 2  &mo 3
             >;
         };
 
-        L_1_num {
+        L_num {
             bindings = <
 &none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
@@ -120,7 +169,7 @@
             >;
         };
 
-        R_2_nav {
+        R_nav {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp TAB        &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &none
@@ -129,16 +178,7 @@
             >;
         };
 
-        L_3_numsp {
-            bindings = <
-&none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &none
-                                           &trans            &trans            &trans              &trans  &trans  &trans
-            >;
-        };
-
-        R_4_brk {
+        R_brk {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
@@ -147,7 +187,7 @@
             >;
         };
 
-        L_5_nav {
+        L_nav {
             bindings = <
 &none  &kp TAB        &none           &kp UP_ARROW    &none            &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME      &trans  &trans  &trans  &trans  &trans  &none
@@ -156,7 +196,7 @@
             >;
         };
 
-        R_6_num {
+        R_num {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COMMA  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT    &none
@@ -165,7 +205,7 @@
             >;
         };
 
-        L_7_brk {
+        L_brk {
             bindings = <
 &none  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &none
@@ -174,16 +214,7 @@
             >;
         };
 
-        layer_8 {
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_STOP       &kp C_PLAY  &none
-                       &trans  &trans  &trans    &trans  &trans      &trans
-            >;
-        };
-
-        layer_9 {
+        L_func {
             bindings = <
 &none  &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp F1   &kp F2   &kp F3  &kp F4          &kp F5          &trans  &trans  &trans  &trans  &trans  &none
@@ -192,7 +223,7 @@
             >;
         };
 
-        layer_10 {
+        R_func {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3  &kp F4          &kp F5        &none
@@ -201,7 +232,7 @@
             >;
         };
 
-        layer_11 {
+        L_modi {
             bindings = <
 &none  &kp TAB     &trans            &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &trans    &trans  &trans  &trans  &trans  &trans  &none
@@ -210,7 +241,7 @@
             >;
         };
 
-        layer_12 {
+        R_modi {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &kp TAB     &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp RSHIFT  &none
@@ -219,7 +250,7 @@
             >;
         };
 
-        layer_13 {
+        LR_mouse {
             bindings = <
 &none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans          &trans          &mmv MOVE_UP    &trans           &trans           &none
 &none  &trans  &trans     &trans     &trans     &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &none
@@ -228,21 +259,21 @@
             >;
         };
 
-        layer_14 {
+        L_numsp {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &none
+                                           &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
 
-        layer_15 {
+        R_media {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_STOP       &kp C_PLAY  &none
+                       &trans  &trans  &trans    &trans  &trans      &trans
             >;
         };
     };
