@@ -202,22 +202,23 @@
 
     keymap {
         compatible = "zmk,keymap";
-        layer_names =
-            "BASE",
-            "L_NUM",
-            "R_NAV",
-            "R_BRK",
-            "L_NAV",
-            "R_NUM",
-            "L_BRK",
-            "L_FN",
-            "R_FN",
-            "L_MODI",
-            "R_MODI",
-            "MOUSE",
-            "L_NSP",
-            "MEDIA",
-            "SET";
+        layer_names {
+    layer_0 = "BASE";
+    layer_1 = "L_NUM";
+    layer_2 = "R_NAV";
+    layer_3 = "R_BRK";
+    layer_4 = "L_NAV";
+    layer_5 = "R_NUM";
+    layer_6 = "L_BRK";
+    layer_7 = "L_FN";
+    layer_8 = "R_FN";
+    layer_9 = "L_MODI";
+    layer_10 = "R_MODI";
+    layer_11 = "MOUSE";
+    layer_12 = "L_NSP";
+    layer_13 = "MEDIA";
+    layer_14 = "SET";
+};
 
         LR_default {
             // -----------------------------------------------------------------------------------------
