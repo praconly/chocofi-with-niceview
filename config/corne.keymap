@@ -195,6 +195,8 @@
     keymap {
         compatible = "zmk,keymap";
 
+        layer_names = "BASE", "L_NUM", "R_NAV", "R_BRK", "L_NAV", "R_NUM","L_BRK","L_FN","R_FN","L_MODI","R_MODI","MOUSE","L_NSP", "MEDIA","SET";
+
         LR_default {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
