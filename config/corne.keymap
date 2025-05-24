@@ -5,7 +5,10 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -156,6 +159,30 @@
             key-positions = <27 37>;
             layers = <0>;
         };
+
+        to_setting {
+            bindings = <&to 14>;
+            key-positions = <36 37 40 41>;
+        };
+
+        bootload {
+            bindings = <&bootloader>;
+            key-positions = <5 29 29>;
+            layers = <14>;
+        };
+
+        sysreset {
+            bindings = <&sys_reset>;
+            key-positions = <4 14>;
+            layers = <14>;
+        };
+
+        mo_R_media {
+            bindings = <&mo 13>;
+            key-positions = <40 31>;
+            slow-release;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -290,6 +317,15 @@
 &none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
 &none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_STOP       &kp C_PLAY  &none
                        &trans  &trans  &trans    &trans  &trans      &trans
+            >;
+        };
+
+        LR_setting {
+            bindings = <
+&none  &none  &none   &none      &trans             &trans       &none       &none       &none       &none         &none         &none
+&none  &none  &trans  &soft_off  &ext_power EP_TOG  &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_BLE  &out OUT_USB  &none
+&none  &none  &none   &none      &none              &trans       &none       &none       &none       &none         &none         &none
+                      &trans     &trans             &kp SPACE    &kp ENTER   &trans      &trans
             >;
         };
     };
