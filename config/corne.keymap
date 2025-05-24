@@ -197,6 +197,24 @@
 
         layer_11 {
             bindings = <
+&none  &kp TAB     &trans            &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp ESCAPE  &trans            &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &none
+                                     &trans        &trans    &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &kp TAB     &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp RSHIFT  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &kp ESCAPE  &none
+                       &trans  &trans  &trans    &trans  &trans        &trans
+            >;
+        };
+
+        layer_13 {
+            bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
