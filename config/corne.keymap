@@ -202,23 +202,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-        layer_names {
-    layer_0 = "BASE";
-    layer_1 = "L_NUM";
-    layer_2 = "R_NAV";
-    layer_3 = "R_BRK";
-    layer_4 = "L_NAV";
-    layer_5 = "R_NUM";
-    layer_6 = "L_BRK";
-    layer_7 = "L_FN";
-    layer_8 = "R_FN";
-    layer_9 = "L_MODI";
-    layer_10 = "R_MODI";
-    layer_11 = "MOUSE";
-    layer_12 = "L_NSP";
-    layer_13 = "MEDIA";
-    layer_14 = "SET";
-};
 
         LR_default {
             // -----------------------------------------------------------------------------------------
@@ -226,7 +209,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            display-name = "BASE";
             bindings = <
 &none  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &none
 &none  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &none
@@ -236,6 +219,7 @@
         };
 
         L_num {
+            display-name = "L_NUM";
             bindings = <
 &none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
@@ -245,6 +229,7 @@
         };
 
         R_nav {
+            display-name = "R_NAV";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp TAB        &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &none
@@ -254,6 +239,7 @@
         };
 
         R_brk {
+            display-name = "R_BRK";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
@@ -263,6 +249,7 @@
         };
 
         L_nav {
+            display-name = "L_NAV";
             bindings = <
 &none  &kp TAB        &none           &kp UP_ARROW    &none            &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME      &trans  &trans  &trans  &trans  &trans  &none
@@ -272,6 +259,7 @@
         };
 
         R_num {
+            display-name = "R_NUM";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COMMA  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT    &none
@@ -281,6 +269,7 @@
         };
 
         L_brk {
+            display-name = "L_BRK";
             bindings = <
 &none  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &none
@@ -290,6 +279,7 @@
         };
 
         L_func {
+            display-name = "L_FUNC";
             bindings = <
 &none  &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp F1   &kp F2   &kp F3  &kp F4          &kp F5          &trans  &trans  &trans  &trans  &trans  &none
@@ -299,6 +289,7 @@
         };
 
         R_func {
+            display-name = "R_FUNC";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3  &kp F4          &kp F5        &none
@@ -308,6 +299,7 @@
         };
 
         L_modi {
+            display-name = "L_MODI";
             bindings = <
 &none  &kp TAB     &trans            &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &trans    &trans  &trans  &trans  &trans  &trans  &none
@@ -317,6 +309,7 @@
         };
 
         R_modi {
+            display-name = "R_MODI";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &kp TAB     &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp RSHIFT  &none
@@ -326,6 +319,7 @@
         };
 
         LR_mouse {
+            display-name = "MOUSE";
             bindings = <
 &none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans          &trans          &mmv MOVE_UP    &trans           &trans           &none
 &none  &trans  &trans     &trans     &trans     &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &none
@@ -335,6 +329,7 @@
         };
 
         L_numsp {
+            display-name = "L_NSP";
             bindings = <
 &none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
@@ -344,6 +339,7 @@
         };
 
         R_media {
+            display-name = "MEDIA";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
 &none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
@@ -353,6 +349,7 @@
         };
 
         LR_setting {
+            display-name = "SET";
             bindings = <
 &none  &none  &none  &none      &kp R              &kp T        &none       &none       &none       &none         &none         &none
 &none  &none  &kp S  &soft_off  &ext_power EP_TOG  &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_BLE  &out OUT_USB  &none
