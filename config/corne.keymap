@@ -90,11 +90,6 @@
             layers = <0 3 5 8 11>;
         };
 
-        RAlt_L {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <13 37>;
-        };
-
         Set_TO_0 {
             bindings = <&to 0>;
             key-positions = <38 39>;
@@ -126,18 +121,31 @@
 
         mo_L_modi {
             bindings = <&mo 9>;
-            key-positions = <37 13>;
+            key-positions = <37 14>;
             layers = <0>;
         };
 
         mo_R_modi {
             bindings = <&mo 10>;
-            key-positions = <22 40>;
+            key-positions = <40 21>;
+            layers = <0>;
         };
 
         mo_L_brk {
             bindings = <&mo 6>;
-            key-positions = <37 14>;
+            key-positions = <37 29>;
+            layers = <0>;
+        };
+
+        RAlt_L {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <13 37>;
+            layers = <0>;
+        };
+
+        Caps_L {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <27 37>;
             layers = <0>;
         };
     };
