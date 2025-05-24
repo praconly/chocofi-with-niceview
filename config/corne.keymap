@@ -76,28 +76,28 @@
         RShift_R {
             bindings = <&kp RSHIFT>;
             key-positions = <22 21>;
-            layers = <0 3 5 8 11>;
+            layers = <0 3 5 8>;
             slow-release;
         };
 
         LCtrl_R {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <21 20>;
-            layers = <0 3 5 8 11>;
+            layers = <0 3 5 8>;
             slow-release;
         };
 
         LAlt_R {
             bindings = <&kp LEFT_ALT>;
             key-positions = <20 19>;
-            layers = <0 3 5 8 11>;
+            layers = <0 3 5 8>;
             slow-release;
         };
 
         LGUI_R {
             bindings = <&kp LEFT_GUI>;
             key-positions = <19 18>;
-            layers = <0 3 5 8 11>;
+            layers = <0 3 5 8>;
             slow-release;
         };
 
