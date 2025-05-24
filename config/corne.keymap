@@ -183,6 +183,13 @@
             slow-release;
             layers = <0>;
         };
+
+        mo_L_numsp {
+            bindings = <&mo 12>;
+            key-positions = <13 14 37>;
+            layers = <0>;
+            slow-release;
+        };
     };
 
     keymap {
