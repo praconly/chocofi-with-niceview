@@ -12,29 +12,34 @@
     combos {
         compatible = "zmk,combos";
 
-        TAB_L {
+        TAB_L_0 {
             bindings = <&kp TAB>;
             key-positions = <1 2 3>;
+            layers = <0>;
         };
 
-        ENTER_L {
+        ENTER_L_0 {
             bindings = <&kp ENTER>;
             key-positions = <3 5 4>;
+            layers = <0>;
         };
 
-        ESC_L {
+        ESC_L_0 {
             bindings = <&kp ESCAPE>;
             key-positions = <25 26 27>;
+            layers = <0>;
         };
 
-        VolUp_R {
+        VolUp_R_0 {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <8 9>;
+            layers = <0>;
         };
 
-        VolDown_R {
+        VolDown_R_0 {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
         LShift_L {
@@ -106,7 +111,7 @@
             >;
         };
 
-        layer_1 {
+        L_1_num {
             bindings = <
 &none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
@@ -115,7 +120,7 @@
             >;
         };
 
-        layer_2 {
+        R_2_nav {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp TAB        &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &none
@@ -124,16 +129,16 @@
             >;
         };
 
-        layer_3 {
+        L_3_numsp {
             bindings = <
-&trans  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans            &trans            &trans              &trans  &trans  &trans
+&none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &none
+                                           &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        R_4_brk {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
@@ -142,7 +147,7 @@
             >;
         };
 
-        layer_5 {
+        L_5_nav {
             bindings = <
 &none  &kp TAB        &none           &kp UP_ARROW    &none            &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME      &trans  &trans  &trans  &trans  &trans  &none
@@ -151,7 +156,7 @@
             >;
         };
 
-        layer_6 {
+        R_6_num {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COMMA  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT    &none
@@ -160,21 +165,21 @@
             >;
         };
 
-        layer_7 {
+        L_7_brk {
             bindings = <
-&trans  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp SLASH       &trans  &trans  &trans  &trans  &trans  &trans
-                                             &trans                 &trans     &trans          &trans  &trans  &trans
+&none  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
+                                            &trans                 &trans     &trans          &trans  &trans  &trans
             >;
         };
 
         layer_8 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
-&none  &none  &none  &none  &none  &none    &none  &none       &none              &kp C_PREV       &kp C_NEXT  &none
-&none  &none  &none  &none  &none  &none    &none  &none       &none              &kp C_STOP       &kp C_PLAY  &none
-                     &none  &none  &none    &none  &none       &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_STOP       &kp C_PLAY  &none
+                       &trans  &trans  &trans    &trans  &trans      &trans
             >;
         };
 
