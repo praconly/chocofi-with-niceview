@@ -48,56 +48,56 @@
         LShift_L {
             bindings = <&kp LSHIFT>;
             key-positions = <13 14>;
-            layers = <0 7 6 1 11>;
+            layers = <0 7 6 1 11 3 2 5 8 12>;
             slow-release;
         };
 
         LCtrl_L {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
-            layers = <0 1 6 7 11>;
+            layers = <0 1 6 7 11 2 3 5 8 12>;
             slow-release;
         };
 
         LAlt_L {
             bindings = <&kp LEFT_ALT>;
             key-positions = <15 16>;
-            layers = <0 6 7 11 1>;
+            layers = <0 6 7 11 1 2 3 5 8 12>;
             slow-release;
         };
 
         LGUI_L {
             bindings = <&kp LEFT_GUI>;
             key-positions = <16 17>;
-            layers = <0 1 6 7 11>;
+            layers = <0 1 6 7 11 2 3 5 8 12>;
             slow-release;
         };
 
         RShift_R {
             bindings = <&kp RSHIFT>;
             key-positions = <22 21>;
-            layers = <0 3 5 8>;
+            layers = <0 3 5 8 1 4 6 7 12>;
             slow-release;
         };
 
         LCtrl_R {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <21 20>;
-            layers = <0 3 5 8>;
+            layers = <0 3 5 8 1 4 6 7 12>;
             slow-release;
         };
 
         LAlt_R {
             bindings = <&kp LEFT_ALT>;
             key-positions = <20 19>;
-            layers = <0 3 5 8>;
+            layers = <0 3 5 8 1 4 6 7 12>;
             slow-release;
         };
 
         LGUI_R {
             bindings = <&kp LEFT_GUI>;
             key-positions = <19 18>;
-            layers = <0 3 5 8>;
+            layers = <0 3 5 8 1 4 6 7 12>;
             slow-release;
         };
 
@@ -168,7 +168,7 @@
         };
 
         to_setting {
-            bindings = <&to 14>;
+            bindings = <&to 13>;
             key-positions = <36 37 40 41>;
             layers = <0>;
         };
@@ -176,20 +176,13 @@
         bootload {
             bindings = <&bootloader>;
             key-positions = <5 29 29>;
-            layers = <14>;
+            layers = <13>;
         };
 
         sysreset {
             bindings = <&sys_reset>;
             key-positions = <4 14>;
-            layers = <14>;
-        };
-
-        mo_R_media {
-            bindings = <&mo 13>;
-            key-positions = <40 31>;
-            slow-release;
-            layers = <0>;
+            layers = <13>;
         };
 
         mo_L_numsp {
@@ -210,7 +203,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        LR_default {
+        BASE_LR {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -226,8 +219,8 @@
             >;
         };
 
-        L_num {
-            display-name = "L_NUM";
+        NUM_L {
+            display-name = "NUM_L";
             bindings = <
 &none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
@@ -236,8 +229,8 @@
             >;
         };
 
-        R_nav {
-            display-name = "R_NAV";
+        NAV_R {
+            display-name = "NAV_R";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp TAB        &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &none
@@ -246,8 +239,8 @@
             >;
         };
 
-        R_brk {
-            display-name = "R_BRK";
+        BRK_R {
+            display-name = "BRK_R";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &none
@@ -256,8 +249,8 @@
             >;
         };
 
-        L_nav {
-            display-name = "L_NAV";
+        NAV_L {
+            display-name = "NAV_L";
             bindings = <
 &none  &kp TAB        &none           &kp UP_ARROW    &none            &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME      &trans  &trans  &trans  &trans  &trans  &none
@@ -266,8 +259,8 @@
             >;
         };
 
-        R_num {
-            display-name = "R_NUM";
+        NUM_R {
+            display-name = "NUM_R";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COMMA  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT    &none
@@ -276,8 +269,8 @@
             >;
         };
 
-        L_brk {
-            display-name = "L_BRK";
+        BRK_L {
+            display-name = "BRK_L";
             bindings = <
 &none  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &none
@@ -286,8 +279,8 @@
             >;
         };
 
-        L_func {
-            display-name = "L_FUNC";
+        FUNC_L {
+            display-name = "FUNC_L";
             bindings = <
 &none  &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp F1   &kp F2   &kp F3  &kp F4          &kp F5          &trans  &trans  &trans  &trans  &trans  &none
@@ -296,8 +289,8 @@
             >;
         };
 
-        R_func {
-            display-name = "R_FUNC";
+        FUNC_R {
+            display-name = "FUNC_R";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &none   &kp KP_NUMLOCK  &kp CAPSLOCK  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3  &kp F4          &kp F5        &none
@@ -306,8 +299,8 @@
             >;
         };
 
-        L_modi {
-            display-name = "L_MODI";
+        MODI_L {
+            display-name = "MODI_L";
             bindings = <
 &none  &kp TAB     &trans            &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &trans    &trans  &trans  &trans  &trans  &trans  &none
@@ -316,8 +309,8 @@
             >;
         };
 
-        R_modi {
-            display-name = "R_MODI";
+        MODI_R {
+            display-name = "MODI_R";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &kp TAB     &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp RSHIFT  &none
@@ -326,7 +319,7 @@
             >;
         };
 
-        LR_mouse {
+        MOUSE_LR {
             display-name = "MOUSE";
             bindings = <
 &none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans          &trans          &mmv MOVE_UP    &trans           &trans           &none
@@ -336,8 +329,8 @@
             >;
         };
 
-        L_numsp {
-            display-name = "L_NSP";
+        NUMSP_L {
+            display-name = "NSP_L";
             bindings = <
 &none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
@@ -346,17 +339,7 @@
             >;
         };
 
-        R_media {
-            display-name = "MEDIA";
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_PREV       &kp C_NEXT  &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &none       &none              &kp C_STOP       &kp C_PLAY  &none
-                       &trans  &trans  &trans    &trans  &trans      &trans
-            >;
-        };
-
-        LR_setting {
+        SETTING_LR {
             display-name = "SET";
             bindings = <
 &none  &none  &none  &none      &kp R              &kp T        &none       &none       &none       &none         &none         &none
@@ -364,6 +347,15 @@
 &none  &none  &none  &none      &none              &kp B        &none       &none       &none       &none         &none         &none
                      &trans     &trans             &kp SPACE    &kp ENTER   &trans      &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        LR_MOUSE {
+            if-layers = <1 2>;
+            then-layer = <11>;
         };
     };
 };
