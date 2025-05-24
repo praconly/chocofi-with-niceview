@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -214,6 +215,24 @@
         };
 
         layer_13 {
+            bindings = <
+&none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans          &trans          &mmv MOVE_UP    &trans           &trans           &none
+&none  &trans  &trans     &trans     &trans     &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &none
+&none  &trans  &trans     &trans     &trans     &trans    &msc SCRL_DOWN  &trans          &trans          &trans           &msc SCRL_RIGHT  &none
+                          &trans     &trans     &trans    &trans          &trans          &trans
+            >;
+        };
+
+        layer_14 {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                       &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_15 {
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
