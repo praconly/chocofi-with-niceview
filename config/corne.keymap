@@ -113,60 +113,59 @@
             slow-release;
         };
 
-
         MO_FUNC_L {
             bindings = <&mo 7>;
             key-positions = <37 16>;
-            layers = <0>;
+            layers = <0 2 3 5 8 10>;
             slow-release;
         };
 
         MO_FUNC_R {
             bindings = <&mo 8>;
             key-positions = <40 19>;
-            layers = <0>;
+            layers = <0 1 4 6 7 12 9>;
             slow-release;
         };
 
         MO_NAV_L {
             bindings = <&mo 4>;
             key-positions = <15 37>;
-            layers = <0>;
+            layers = <0 2 3 5 8 10>;
             slow-release;
         };
 
         MO_NUM_R {
             bindings = <&mo 5>;
             key-positions = <40 20>;
-            layers = <0>;
+            layers = <0 1 4 6 7 12 9>;
             slow-release;
         };
 
         MO_MODI_L {
             bindings = <&mo 9>;
             key-positions = <37 14>;
-            layers = <0>;
+            layers = <0 2 3 5 8 10>;
             slow-release;
         };
 
         MO_MODI_R {
             bindings = <&mo 10>;
             key-positions = <40 21>;
-            layers = <0>;
+            layers = <0 1 4 6 7 9 12>;
             slow-release;
         };
 
         MO_BRK_L {
             bindings = <&mo 6>;
             key-positions = <37 29>;
-            layers = <0>;
+            layers = <0 2 3 5 8 10>;
             slow-release;
         };
 
         MO_NUMSP_L {
             bindings = <&mo 12>;
             key-positions = <13 14 37>;
-            layers = <0>;
+            layers = <0 2 3 5 8 10>;
             slow-release;
         };
 
@@ -199,7 +198,6 @@
             key-positions = <4 14>;
             layers = <13>;
         };
-
     };
 
     keymap {
