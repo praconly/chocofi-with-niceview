@@ -3,15 +3,15 @@ manifest:
       # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gpeye                         #new entry
-      url-base: https://github.com/GPeye  #new entry
+    - name: praconly                         #new entry
+      url-base: https://github.com/praconly  #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: nice-view-mod                 #new entry
-      remote: gpeye                       #new entry
+      remote: praconly                       #new entry
       revision: main                      #new entry
   self:
     path: config
