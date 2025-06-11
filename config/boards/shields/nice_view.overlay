@@ -8,19 +8,26 @@
 
     main_renderer: renderer {
         compatible = "zmk,display-renderer";
-        children = <&layer_status &output_status &battery_status>;
+        //통합 status 화면을 사용할 경우 children 생략해도 됨
+        //children = <&layer_status &output_status &battery_status>;
     };
 
+    /*
     layer_status: layer_status {
         compatible = "zmk,layer-status";
         draw-text-fn = "layer_name";  // 레이어 이름 표시
     };
+    */
 
+    /*
     output_status: output_status {
         compatible = "zmk,output-status"; // 연결 타입 (USB/BLE)
     };
+    */
 
+    /*
     battery_status: battery_status {
         compatible = "zmk,battery-status"; // 배터리 잔량 표시
     };
+    */
 };
