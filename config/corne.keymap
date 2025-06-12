@@ -368,10 +368,10 @@
         BRK_L {
             display-name = "BRK_L";
             bindings = <
-&none  &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT         &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp APOS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
-                                            &trans                 &trans     &trans          &trans  &trans  &trans
+&none  &kp BACKSLASH     &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE         &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp SLASH         &kp PERIOD         &kp COMMA             &kp DOUBLE_QUOTES      &kp APOSTROPHE    &trans  &trans  &trans  &trans  &trans  &none
+                                            &trans                &trans                 &trans            &trans  &trans  &trans
             >;
         };
 
