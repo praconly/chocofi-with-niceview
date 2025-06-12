@@ -211,12 +211,6 @@
             layers = <0>;
         };
 
-        BKSP_L {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <37 3>;
-            layers = <0>;
-        };
-
         MO_MISC_R {
             bindings = <&mo 13>;
             key-positions = <40 21 22>;
