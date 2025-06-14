@@ -265,6 +265,41 @@
             key-positions = <22 33>;
             layers = <0>;
         };
+
+        LCTRL_SHFT_L {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <13 14 15>;
+            slow-release;
+            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+        };
+
+        LALT_SHFT_L {
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            key-positions = <16 13 14>;
+            slow-release;
+            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+        };
+
+        LCTRL_ALT_L {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <16 14 15>;
+            slow-release;
+            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+        };
+
+        LGUI_SHFT_L {
+            bindings = <&kp LG(LEFT_SHIFT)>;
+            key-positions = <13 17 14>;
+            slow-release;
+            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+        };
+
+        LGUI_CTRL_L {
+            bindings = <&kp LG(LCTRL)>;
+            key-positions = <17 14 15>;
+            slow-release;
+            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+        };
     };
 
     behaviors {
