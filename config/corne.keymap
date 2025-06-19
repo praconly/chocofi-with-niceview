@@ -19,42 +19,49 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <13 37>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         Caps_L {
             bindings = <&kp CAPSLOCK>;
             key-positions = <27 37>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         TAB_L {
             bindings = <&kp TAB>;
             key-positions = <17 37>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         ENTER_L {
             bindings = <&kp ENTER>;
             key-positions = <5 37>;
             layers = <0>;
+            require-prior-idle-ms = <70>;
         };
 
         ESC_L {
             bindings = <&kp ESCAPE>;
             key-positions = <37 29>;
             layers = <0>;
+            require-prior-idle-ms = <70>;
         };
 
         VolUp_R {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <8 9 7>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         VolDown_R {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <19 20 21>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         LShift_L {
@@ -69,6 +76,7 @@
             key-positions = <14 15>;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         LAlt_L {
@@ -76,6 +84,7 @@
             key-positions = <15 16>;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         LGUI_L {
@@ -83,6 +92,7 @@
             key-positions = <16 17>;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         RShift_R {
@@ -97,6 +107,7 @@
             key-positions = <21 20>;
             layers = <0 1 3 4 5 6 7 8 12>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         LAlt_R {
@@ -104,6 +115,7 @@
             key-positions = <20 19>;
             layers = <0 1 3 4 5 6 7 8 12>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         LGUI_R {
@@ -111,6 +123,7 @@
             key-positions = <19 18>;
             layers = <0 1 3 4 5 6 7 8 12>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_FUNC_L {
@@ -118,6 +131,7 @@
             key-positions = <37 16>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         MO_FUNC_R {
@@ -125,6 +139,7 @@
             key-positions = <40 19>;
             layers = <0 1 4 6 7 12 9>;
             slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         MO_NAV_L {
@@ -132,6 +147,7 @@
             key-positions = <15 37>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_NUM_R {
@@ -139,6 +155,7 @@
             key-positions = <40 20>;
             layers = <0 1 4 6 7 12 9>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_MODI_L {
@@ -146,6 +163,7 @@
             key-positions = <37 14>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_MODI_R {
@@ -153,6 +171,7 @@
             key-positions = <40 21>;
             layers = <0 1 4 6 7 9 12>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_BRK_L {
@@ -160,6 +179,7 @@
             key-positions = <37 14 15>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_NUMSP_L {
@@ -167,6 +187,7 @@
             key-positions = <13 14 37>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         MO_MOUSE {
@@ -174,6 +195,7 @@
             key-positions = <40 31>;
             layers = <0>;
             slow-release;
+            require-prior-idle-ms = <70>;
         };
 
         TO_BASE {
@@ -185,6 +207,7 @@
             bindings = <&to 14>;
             key-positions = <37 14 3 5>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         bootload {
@@ -203,12 +226,14 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <30 31>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         DQUOTE_R {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <32 31>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         MO_MISC_R {
@@ -216,54 +241,64 @@
             key-positions = <40 21 22>;
             slow-release;
             layers = <0 1 4 6 7 9 12>;
+            require-prior-idle-ms = <70>;
         };
 
         GRAVE_R {
             bindings = <&kp GRAVE>;
             key-positions = <7 6>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         BSLASH_R {
             bindings = <&kp BACKSLASH>;
             key-positions = <10 9>;
             layers = <0>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         LBRK_S_R {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 20>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         RBRK_S_R {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 8>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         LBRK_M_R {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <19 32>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         RBRK_M_R {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <20 31>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         LBRK_L_R {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <21 34>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         RBRK_L_R {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 33>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         LCTRL_SHFT_L {
@@ -271,6 +306,7 @@
             key-positions = <13 14 15>;
             slow-release;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            require-prior-idle-ms = <70>;
         };
 
         LALT_SHFT_L {
@@ -278,6 +314,7 @@
             key-positions = <16 13 14>;
             slow-release;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            require-prior-idle-ms = <70>;
         };
 
         LCTRL_ALT_L {
@@ -285,6 +322,7 @@
             key-positions = <16 14 15>;
             slow-release;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            require-prior-idle-ms = <70>;
         };
 
         LGUI_SHFT_L {
@@ -292,6 +330,7 @@
             key-positions = <13 17 14>;
             slow-release;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            require-prior-idle-ms = <70>;
         };
 
         LGUI_CTRL_L {
@@ -299,11 +338,13 @@
             key-positions = <17 14 15>;
             slow-release;
             layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            require-prior-idle-ms = <70>;
         };
 
         RALT_R {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <33 32>;
+            require-prior-idle-ms = <50>;
         };
     };
 
