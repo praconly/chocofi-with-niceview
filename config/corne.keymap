@@ -204,7 +204,7 @@
         };
 
         TO_SETTING {
-            bindings = <&to 14>;
+            bindings = <&tog 14>;
             key-positions = <37 14 3 5>;
             layers = <0>;
             require-prior-idle-ms = <100>;
@@ -523,10 +523,10 @@
         SETTING_LR {
             display-name = "SET";
             bindings = <
-&none  &none  &none  &none      &kp R              &kp T        &none       &none       &none       &none         &none         &none
-&none  &none  &kp S  &soft_off  &ext_power EP_TOG  &none        &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_BLE  &out OUT_USB  &none
-&none  &none  &none  &none      &none              &kp B        &none       &none       &none       &none         &none         &none
-                     &trans     &trans             &kp SPACE    &kp ENTER   &trans      &trans
+&none  &none       &none       &none       &kp R              &kp T        &none          &none          &none          &none          &none          &none
+&none  &none       &kp S       &soft_off   &ext_power EP_TOG  &none        &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
+&none  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &out OUT_TOG       &kp B        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
+                               &trans      &trans             &kp SPACE    &kp ENTER      &trans         &trans
             >;
         };
     };
