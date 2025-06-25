@@ -206,7 +206,7 @@
         TO_SETTING {
             bindings = <&tog 14>;
             key-positions = <37 14 3 5>;
-            layers = <0>;
+            layers = <0 14>;
             require-prior-idle-ms = <100>;
         };
 
