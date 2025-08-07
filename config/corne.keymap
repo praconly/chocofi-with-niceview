@@ -11,6 +11,13 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <130>;
+};
+
+&lt { flavor = "balanced"; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -355,6 +362,45 @@
             #binding-cells = <0>;
             bindings = <&kp KP_MULTIPLY>, <&kp KP_DIVIDE>;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ht homerow";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+        };
+
+        lshft_z: lshft_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LSHFT_Z";
+            #binding-cells = <0>;
+            bindings = <&mt LSHIFT Z>, <&kp Z>;
+        };
+
+        lshft_x: lshft_x {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LSHFT_X";
+            #binding-cells = <0>;
+            bindings = <&mt LSHIFT X>, <&kp X>;
+        };
+
+        rshft_slash: rshft_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RSHFT_SLASH";
+            #binding-cells = <0>;
+            bindings = <&mt LSHIFT SLASH>, <&kp SLASH>;
+        };
+
+        rshft_dot: rshft_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RSHFT_DOT";
+            #binding-cells = <0>;
+            bindings = <&mt LSHIFT DOT>, <&kp DOT>;
+        };
     };
 
     keymap {
@@ -369,10 +415,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q             &kp W             &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O                &kp P                 &none
-&none  &kp A             &kp S             &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L                &kp SEMI              &none
-&none  &mt LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &mt RIGHT_SHIFT DOT  &mt RIGHT_SHIFT FSLH  &none
-                                           &mo 9  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
+&none  &kp Q     &kp W     &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O       &kp P         &none
+&none  &kp A     &kp S     &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L       &kp SEMI      &none
+&none  &lshft_z  &lshft_x  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &rshft_dot  &rshft_slash  &none
+                           &mo 9  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
             >;
         };
 
