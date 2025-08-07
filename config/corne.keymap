@@ -13,10 +13,10 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <130>;
+    quick-tap-ms = <175>;
 };
 
-&lt { flavor = "balanced"; };
+&lt { flavor = "hold-preferred"; };
 
 / {
     combos {
@@ -373,34 +373,6 @@
             quick-tap-ms = <130>;
             flavor = "tap-preferred";
         };
-
-        lshft_z: lshft_z {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LSHFT_Z";
-            #binding-cells = <0>;
-            bindings = <&mt LSHIFT Z>, <&kp Z>;
-        };
-
-        lshft_x: lshft_x {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LSHFT_X";
-            #binding-cells = <0>;
-            bindings = <&mt LSHIFT X>, <&kp X>;
-        };
-
-        rshft_slash: rshft_slash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RSHFT_SLASH";
-            #binding-cells = <0>;
-            bindings = <&mt LSHIFT SLASH>, <&kp SLASH>;
-        };
-
-        rshft_dot: rshft_dot {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RSHFT_DOT";
-            #binding-cells = <0>;
-            bindings = <&mt LSHIFT DOT>, <&kp DOT>;
-        };
     };
 
     keymap {
@@ -418,7 +390,7 @@
 &none  &kp Q        &kp W        &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O          &kp P            &none
 &none  &mt LSHFT A  &kp S        &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L          &mt RSHFT SEMI   &none
 &none  &mt LSHFT Z  &mt LSHFT X  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &mt RSHFT DOT  &mt RSHFT SLASH  &none
-                                 &mo 9  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
+                                 &mo 4  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
             >;
         };
 
