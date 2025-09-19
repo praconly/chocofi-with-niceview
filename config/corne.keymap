@@ -110,7 +110,7 @@
 
         MO_NAV_L {
             bindings = <&mo 4>;
-            key-positions = <15 37 16>;
+            key-positions = <15 37>;
             layers = <0 2 3 5 8 10 13>;
             slow-release;
             require-prior-idle-ms = <70>;
@@ -118,7 +118,7 @@
 
         MO_NUM_R {
             bindings = <&mo 5>;
-            key-positions = <40 20 21>;
+            key-positions = <40 20>;
             layers = <0 1 4 6 7 12 9>;
             slow-release;
             require-prior-idle-ms = <70>;
@@ -269,7 +269,7 @@
 
         LCTRL_SHFT_L {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <14 25>;
+            key-positions = <14 13>;
             slow-release;
             layers = <0 11>;
             require-prior-idle-ms = <70>;
@@ -277,7 +277,7 @@
 
         LALT_SHFT_L {
             bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <25 15>;
+            key-positions = <15 13>;
             slow-release;
             layers = <0 11>;
             require-prior-idle-ms = <70>;
@@ -293,7 +293,7 @@
 
         LGUI_SHFT_L {
             bindings = <&kp LG(LEFT_SHIFT)>;
-            key-positions = <25 16>;
+            key-positions = <16 13>;
             slow-release;
             layers = <0 11>;
             require-prior-idle-ms = <70>;
@@ -314,7 +314,7 @@
 
         LSCA_L {
             bindings = <&kp LC(LA(LEFT_SHIFT))>;
-            key-positions = <14 15 25 16>;
+            key-positions = <14 15 16 13>;
             slow-release;
             require-prior-idle-ms = <70>;
             layers = <0 11>;
@@ -361,6 +361,13 @@
             layers = <0>;
             require-prior-idle-ms = <50>;
         };
+
+        RAlt_L {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <37 16 14>;
+            layers = <0>;
+            require-prior-idle-ms = <70>;
+        };
     };
 
     behaviors {
@@ -404,7 +411,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
-            require-prior-idle-ms = <70>;
         };
 
         hmr: hmr_ {
@@ -415,7 +421,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
-            require-prior-idle-ms = <70>;
         };
 
         lt_spc: lt_spc {
@@ -443,10 +448,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q              &kp W         &kp E            &kp R            &kp T               &kp Y    &kp U            &kp I        &kp O           &kp P                       &none
-&none  &hml LEFT_SHIFT A  &kp S         &kp D            &kp F            &kp G               &kp H    &kp J            &kp K        &kp L           &hmr RIGHT_SHIFT SEMICOLON  &none
-&none  &hml LSHFT Z       &hml LSHFT X  &kp C            &kp V            &kp B               &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH            &none
-                                        &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt_spc 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
+&none  &kp Q              &kp W  &kp E            &kp R      &kp T               &kp Y    &kp U            &kp I        &kp O    &kp P                       &none
+&none  &hml LEFT_SHIFT A  &kp S  &kp D            &kp F      &kp G               &kp H    &kp J            &kp K        &kp L    &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &hml LSHFT Z       &kp X  &kp C            &kp V      &kp B               &kp N    &kp M            &kp COMMA    &kp DOT  &hmr RSHFT SLASH            &none
+                                 &lt 4 BACKSPACE  &lt 1 TAB  &lt_spc 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
             >;
         };
 
