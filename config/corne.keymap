@@ -19,6 +19,7 @@
 &lt {
     flavor = "hold-preferred";
     tapping-term-ms = <180>;
+    hold-while-undecided;
 };
 
 / {
@@ -403,6 +404,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
+            require-prior-idle-ms = <70>;
         };
 
         hmr: hmr_ {
@@ -413,6 +415,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
+            require-prior-idle-ms = <70>;
         };
 
         lt_spc: lt_spc {
