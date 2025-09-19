@@ -373,6 +373,34 @@
             quick-tap-ms = <130>;
             flavor = "tap-preferred";
         };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            hold-trigger-key-positions = <6 18 30 31 19 7 8 20 32 33 21 9 10 22 34 35 23 11 39 40 41>;
+            hold-trigger-on-release;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+        };
+
+        hmr: hmr_ {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR ";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            hold-trigger-on-release;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39>;
+        };
     };
 
     keymap {
@@ -387,10 +415,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q        &kp W        &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O          &kp P            &none
-&none  &mt LSHFT A  &kp S        &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L          &mt RSHFT SEMI   &none
-&none  &mt LSHFT Z  &mt LSHFT X  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &mt RSHFT DOT  &mt RSHFT SLASH  &none
-                                 &mo 4  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
+&none  &kp Q         &kp W        &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O          &kp P             &none
+&none  &hml LSHFT A  &kp S        &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L          &hmr  RSHFT SEMI  &none
+&none  &mt LSHFT Z   &mt LSHFT X  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &mt RSHFT DOT  &mt RSHFT SLASH   &none
+                                  &mo 4  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
             >;
         };
 
