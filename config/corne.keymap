@@ -411,7 +411,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <165>;
             flavor = "balanced";
-            retro-tap;
         };
 
         hmr: hmr_ {
@@ -422,7 +421,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <165>;
             flavor = "balanced";
-            retro-tap;
         };
 
         lt_spc: lt_spc {
