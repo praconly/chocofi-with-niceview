@@ -67,7 +67,7 @@
         LCtrl_L {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             slow-release;
             require-prior-idle-ms = <70>;
         };
@@ -75,7 +75,7 @@
         LAlt_L {
             bindings = <&kp LEFT_ALT>;
             key-positions = <15 16>;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             slow-release;
             require-prior-idle-ms = <70>;
         };
@@ -83,31 +83,7 @@
         LGUI_L {
             bindings = <&kp LEFT_GUI>;
             key-positions = <16 17>;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
-            slow-release;
-            require-prior-idle-ms = <70>;
-        };
-
-        LCtrl_R {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <21 20>;
-            layers = <0 1 3 4 5 6 7 8 12>;
-            slow-release;
-            require-prior-idle-ms = <70>;
-        };
-
-        LAlt_R {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <20 19>;
-            layers = <0 1 3 4 5 6 7 8 12>;
-            slow-release;
-            require-prior-idle-ms = <70>;
-        };
-
-        LGUI_R {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <19 18>;
-            layers = <0 1 3 4 5 6 7 8 12>;
+            layers = <0 11>;
             slow-release;
             require-prior-idle-ms = <70>;
         };
@@ -190,7 +166,7 @@
         };
 
         MO_SETTING {
-            bindings = <&mo 14>;
+            bindings = <&mo 15>;
             key-positions = <37 14 3 5>;
             require-prior-idle-ms = <100>;
             slow-release;
@@ -199,13 +175,13 @@
         bootload {
             bindings = <&bootloader>;
             key-positions = <5 29 29>;
-            layers = <14>;
+            layers = <15>;
         };
 
         sysreset {
             bindings = <&sys_reset>;
             key-positions = <4 14>;
-            layers = <14>;
+            layers = <15>;
         };
 
         SQUOTE_R {
@@ -289,17 +265,17 @@
 
         LCTRL_SHFT_L {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <14 15 25>;
+            key-positions = <14 25>;
             slow-release;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             require-prior-idle-ms = <70>;
         };
 
         LALT_SHFT_L {
             bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <16 25 15>;
+            key-positions = <25 15>;
             slow-release;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             require-prior-idle-ms = <70>;
         };
 
@@ -307,15 +283,15 @@
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <16 14 15>;
             slow-release;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             require-prior-idle-ms = <70>;
         };
 
         LGUI_SHFT_L {
             bindings = <&kp LG(LEFT_SHIFT)>;
-            key-positions = <17 25>;
+            key-positions = <25 16>;
             slow-release;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             require-prior-idle-ms = <70>;
         };
 
@@ -323,7 +299,7 @@
             bindings = <&kp LG(LCTRL)>;
             key-positions = <17 14 15>;
             slow-release;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
             require-prior-idle-ms = <70>;
         };
 
@@ -337,7 +313,49 @@
             key-positions = <14 15 25 16>;
             slow-release;
             require-prior-idle-ms = <70>;
-            layers = <0 1 2 3 5 6 7 8 11 12 13>;
+            layers = <0 11>;
+        };
+
+        B_R {
+            bindings = <&kp B>;
+            key-positions = <21 30>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
+        };
+
+        Tilde_R {
+            bindings = <&kp TILDE>;
+            key-positions = <18 19>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
+        };
+
+        PShift_R {
+            bindings = <&kp LS(P)>;
+            key-positions = <21 7>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
+        };
+
+        OShift_R {
+            bindings = <&kp LS(O)>;
+            key-positions = <21 8>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
+        };
+
+        O_R {
+            bindings = <&kp O>;
+            key-positions = <21 20>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
+        };
+
+        P_R {
+            bindings = <&kp P>;
+            key-positions = <21 19>;
+            layers = <0>;
+            require-prior-idle-ms = <50>;
         };
     };
 
@@ -415,10 +433,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q         &kp W        &kp E  &kp R            &kp T        &kp Y    &kp U            &kp I      &kp O          &kp P            &none
-&none  &hml LSHFT A  &kp S        &kp D  &kp F            &kp G        &kp H    &kp J            &kp K      &kp L          &hmr RSHFT SEMI  &none
-&none  &mt LSHFT Z   &mt LSHFT X  &kp C  &kp V            &kp B        &kp N    &kp M            &kp COMMA  &mt RSHFT DOT  &mt RSHFT SLASH  &none
-                                  &mo 4  &lt 1 RIGHT_ALT  &kp SPACE    &kp RET  &lt 2 RIGHT_ALT  &mo 3
+&none  &kp Q         &kp W         &kp E            &kp R            &kp T           &kp Y    &kp U            &kp I        &kp O           &kp P             &none
+&none  &kp A         &kp S         &kp D            &kp F            &kp G           &kp H    &kp J            &kp K        &kp L           &kp SEMICOLON     &none
+&none  &hml LSHFT Z  &hml LSHFT X  &kp C            &kp V            &kp B           &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH  &none
+                                   &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
             >;
         };
 
@@ -549,6 +567,15 @@
 &none  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_ALT  &kp LANG1       &kp K_APP        &kp LANG2       &kp CAPS         &none
 &none  &trans  &trans  &trans  &trans  &trans    &none          &none           &none            &none           &none            &none
                        &trans  &trans  &trans    &trans         &trans          &trans
+            >;
+        };
+
+        RCLN_L {
+            bindings = <
+&none  &kp Y  &kp U  &kp I      &kp O    &kp P       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp H  &kp J  &kp K      &kp L    &kp SEMI    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &trans  &trans  &trans  &trans  &trans  &none
+                     &trans     &trans   &trans      &trans  &trans  &trans
             >;
         };
 
