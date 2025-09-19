@@ -16,7 +16,10 @@
     quick-tap-ms = <175>;
 };
 
-&lt { flavor = "hold-preferred"; };
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <180>;
+};
 
 / {
     combos {
@@ -402,8 +405,7 @@
             hold-trigger-key-positions = <6 18 30 31 19 7 8 20 32 33 21 9 10 22 34 35 23 11 39 40 41>;
             hold-trigger-on-release;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
         hmr: hmr_ {
@@ -415,8 +417,7 @@
             tapping-term-ms = <280>;
             hold-trigger-on-release;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39>;
         };
 
@@ -427,8 +428,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            flavor = "tap-unless-interrupted";
-            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <250>;
         };
     };
@@ -445,10 +446,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q         &kp W         &kp E            &kp R            &kp T               &kp Y    &kp U            &kp I        &kp O           &kp P                       &none
-&none  &kp A         &kp S         &kp D            &kp F            &kp G               &kp H    &kp J            &kp K        &kp L           &hmr RIGHT_SHIFT SEMICOLON  &none
-&none  &hml LSHFT Z  &hml LSHFT X  &kp C            &kp V            &kp B               &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH            &none
-                                   &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt_spc 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
+&none  &kp Q              &kp W         &kp E            &kp R            &kp T               &kp Y    &kp U            &kp I        &kp O           &kp P                       &none
+&none  &hml LEFT_SHIFT A  &kp S         &kp D            &kp F            &kp G               &kp H    &kp J            &kp K        &kp L           &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &hml LSHFT Z       &hml LSHFT X  &kp C            &kp V            &kp B               &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH            &none
+                                        &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt_spc 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
             >;
         };
 
