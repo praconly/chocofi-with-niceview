@@ -419,6 +419,18 @@
             flavor = "hold-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39>;
         };
+
+        lt_spc: lt_spc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SPC";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     keymap {
@@ -433,10 +445,10 @@
 
             display-name = "BASE";
             bindings = <
-&none  &kp Q         &kp W         &kp E            &kp R            &kp T           &kp Y    &kp U            &kp I        &kp O           &kp P             &none
-&none  &kp A         &kp S         &kp D            &kp F            &kp G           &kp H    &kp J            &kp K        &kp L           &kp SEMICOLON     &none
-&none  &hml LSHFT Z  &hml LSHFT X  &kp C            &kp V            &kp B           &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH  &none
-                                   &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
+&none  &kp Q         &kp W         &kp E            &kp R            &kp T               &kp Y    &kp U            &kp I        &kp O           &kp P                       &none
+&none  &kp A         &kp S         &kp D            &kp F            &kp G               &kp H    &kp J            &kp K        &kp L           &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &hml LSHFT Z  &hml LSHFT X  &kp C            &kp V            &kp B               &kp N    &kp M            &kp COMMA    &hmr RSHFT DOT  &hmr RSHFT SLASH            &none
+                                   &lt 4 BACKSPACE  &lt 1 RIGHT_ALT  &lt_spc 14 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
             >;
         };
 
