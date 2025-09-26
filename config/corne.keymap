@@ -184,15 +184,15 @@
         TO_BASE_L {
             bindings = <&to 0>;
             key-positions = <38 37 36>;
+            timeout-ms = <30>;
         };
 
         MO_SETTING {
             bindings = <&mo 15>;
-            key-positions = <14 3 5 38>;
+            key-positions = <14 3 5 37>;
             require-prior-idle-ms = <0>;
             slow-release;
             timeout-ms = <30>;
-            layers = <0>;
         };
 
         bootload {
@@ -344,6 +344,7 @@
         TO_BASE_R {
             bindings = <&to 0>;
             key-positions = <39 40 41>;
+            timeout-ms = <30>;
         };
 
         LSCA_L {
@@ -490,7 +491,7 @@
         NUM_L {
             display-name = "NUM_L";
             bindings = <
-&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp SLASH       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp F24         &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &none
                                    &trans         &trans        &trans          &trans  &trans  &trans
