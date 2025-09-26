@@ -191,7 +191,7 @@
             key-positions = <14 3 5 38>;
             require-prior-idle-ms = <0>;
             slow-release;
-            timeout-ms = <0>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
@@ -618,7 +618,7 @@
         };
 
         MIRROR_L {
-            display-name = "MIRROR"
+            display-name = "MIRROR";
             bindings = <
 &none  &kp P          &kp O       &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp SEMICOLON  &kp L       &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &none
