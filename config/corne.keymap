@@ -58,14 +58,14 @@
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <8 9 7>;
             layers = <0>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         VolDown_R {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <19 20 21>;
             layers = <0>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         LCtrl_L {
@@ -73,7 +73,7 @@
             key-positions = <14 15>;
             layers = <0 11>;
             slow-release;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         LAlt_L {
@@ -89,7 +89,7 @@
             key-positions = <16 17>;
             layers = <0 11>;
             slow-release;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         MO_FUNC_L {
@@ -190,16 +190,16 @@
 
         SQUOTE_R {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <30 31>;
+            key-positions = <22 21>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         DQUOTE_R {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <32 31>;
+            key-positions = <20 21 22>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         MO_MISC_R {
@@ -212,59 +212,59 @@
 
         GRAVE_R {
             bindings = <&kp GRAVE>;
-            key-positions = <7 6>;
+            key-positions = <10 9>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         BSLASH_R {
             bindings = <&kp BACKSLASH>;
-            key-positions = <10 9>;
+            key-positions = <33 34>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         LBRK_S_R {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 20>;
+            key-positions = <7 8>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         RBRK_S_R {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 8>;
+            key-positions = <8 9>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         LBRK_M_R {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <19 32>;
+            key-positions = <19 20>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         RBRK_M_R {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <20 31>;
+            key-positions = <20 21>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         LBRK_L_R {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 34>;
+            key-positions = <31 32>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         RBRK_L_R {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <22 33>;
+            key-positions = <33 32>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         LCTRL_SHFT_L {
@@ -272,7 +272,7 @@
             key-positions = <14 13>;
             slow-release;
             layers = <0 11>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         LALT_SHFT_L {
@@ -280,7 +280,7 @@
             key-positions = <15 13>;
             slow-release;
             layers = <0 11>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         LCTRL_ALT_L {
@@ -288,7 +288,7 @@
             key-positions = <16 14 15>;
             slow-release;
             layers = <0 11>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         LGUI_SHFT_L {
@@ -296,7 +296,7 @@
             key-positions = <16 13>;
             slow-release;
             layers = <0 11>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         LGUI_CTRL_L {
@@ -304,7 +304,7 @@
             key-positions = <17 14 15>;
             slow-release;
             layers = <0 11>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         TO_BASE_R {
@@ -316,57 +316,65 @@
             bindings = <&kp LC(LA(LEFT_SHIFT))>;
             key-positions = <14 15 16 13>;
             slow-release;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
             layers = <0 11>;
         };
 
         B_R {
             bindings = <&kp B>;
-            key-positions = <21 30>;
+            key-positions = <30 31>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         Tilde_R {
             bindings = <&kp TILDE>;
             key-positions = <18 19>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         PShift_R {
             bindings = <&kp LS(P)>;
             key-positions = <21 7>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         OShift_R {
             bindings = <&kp LS(O)>;
             key-positions = <21 8>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         O_R {
             bindings = <&kp O>;
             key-positions = <21 20>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         P_R {
             bindings = <&kp P>;
             key-positions = <21 19>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         RAlt_L {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <37 16 14>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <200>;
+        };
+
+        LGUI_ALT_L {
+            bindings = <&kp LG(LEFT_ALT)>;
+            key-positions = <15 16 17>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+            layers = <0 11>;
         };
     };
 
@@ -478,10 +486,10 @@
         BRK_R {
             display-name = "BRK_R";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE          &kp BACKSLASH      &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp APOS   &kp DOUBLE_QUOTES     &trans                 &trans            &trans             &none
-                       &trans  &trans  &trans    &trans     &trans                &trans
+&none  &trans  &trans  &trans  &trans  &trans    &kp F21  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE          &kp GRAVE         &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp F22  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp F23  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp BACKSLASH     &none
+                       &trans  &trans  &trans    &trans   &trans                &trans
             >;
         };
 
@@ -508,29 +516,29 @@
         BRK_L {
             display-name = "BRK_L";
             bindings = <
-&none  &kp BACKSLASH     &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE         &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp SLASH         &kp PERIOD         &kp COMMA             &kp DOUBLE_QUOTES      &kp APOSTROPHE    &trans  &trans  &trans  &trans  &trans  &none
-                                            &trans                &trans                 &trans            &trans  &trans  &trans
+&none  &kp GRAVE         &kp TILDE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F21    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp F22    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp BACKSLASH     &kp PIPE           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F23    &trans  &trans  &trans  &trans  &trans  &none
+                                            &trans                &trans                 &trans     &trans  &trans  &trans
             >;
         };
 
         FUNC_L {
             display-name = "FUNC_L";
             bindings = <
-&none  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F1   &kp F2   &kp F3             &kp F4           &kp F5     &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F6   &kp F7   &kp F8             &kp F9           &kp F10    &trans  &trans  &trans  &trans  &trans  &none
-                         &trans             &trans           &trans     &trans  &trans  &trans
+&none  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &trans  &trans  &trans  &trans  &trans  &none
+                         &trans   &trans   &trans     &trans  &trans  &trans
             >;
         };
 
         FUNC_R {
             display-name = "FUNC_R";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3             &kp F4           &kp F5   &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp F6   &kp F7   &kp F8             &kp F9           &kp F10  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &none
                        &trans  &trans  &trans    &trans   &trans   &trans
             >;
         };
@@ -587,10 +595,10 @@
 
         RCLN_L {
             bindings = <
-&none  &kp Y  &kp U  &kp I      &kp O    &kp P       &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp H  &kp J  &kp K      &kp L    &kp SEMI    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &trans  &trans  &trans  &trans  &trans  &none
-                     &trans     &trans   &trans      &trans  &trans  &trans
+&none  &kp P          &kp O       &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp SEMICOLON  &kp L       &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp SLASH      &kp PERIOD  &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &none
+                                  &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
