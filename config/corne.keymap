@@ -617,7 +617,8 @@
             >;
         };
 
-        RCLN_L {
+        MIRROR_L {
+            display-name = "MIRROR"
             bindings = <
 &none  &kp P          &kp O       &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp SEMICOLON  &kp L       &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &none
