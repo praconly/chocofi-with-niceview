@@ -192,6 +192,7 @@
             require-prior-idle-ms = <0>;
             slow-release;
             timeout-ms = <0>;
+            layers = <0>;
         };
 
         bootload {
