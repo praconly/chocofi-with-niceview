@@ -341,20 +341,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        OShift_R {
-            bindings = <&kp LS(O)>;
-            key-positions = <21 8>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-        };
-
-        O_R {
-            bindings = <&kp O>;
-            key-positions = <21 20>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-        };
-
         P_R {
             bindings = <&kp P>;
             key-positions = <21 19>;
