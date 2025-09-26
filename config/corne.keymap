@@ -188,7 +188,7 @@
 
         MO_SETTING {
             bindings = <&mo 15>;
-            key-positions = <37 14 3 5>;
+            key-positions = <14 3 5 36>;
             require-prior-idle-ms = <0>;
             slow-release;
             timeout-ms = <0>;
