@@ -428,10 +428,10 @@
         NUM_L {
             display-name = "NUM_L";
             bindings = <
-&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &kp F24         &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp MINUS     &kp EQUAL     &kp BACKSPACE  &kp DELETE    &to 1           &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &none
-                                   &trans         &trans        &trans          &trans  &trans  &trans
+                                   &trans         &to 0         &trans          &trans  &trans  &trans
             >;
         };
 
@@ -550,7 +550,7 @@
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &none      &none
 &none  &trans  &trans  &trans  &trans  &trans    &none   &kp RIGHT_ALT    &kp LANGUAGE_1  &kp K_APPLICATION  &kp LANG2  &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp KP_NUMLOCK   &kp CAPS        &kp INS            &none      &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp INS          &kp CAPS        &kp KP_NUMLOCK     &none      &none
                        &trans  &trans  &trans    &trans  &trans           &trans
             >;
         };
