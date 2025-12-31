@@ -22,6 +22,8 @@
     hold-while-undecided;
 };
 
+&tog { toggle-mode = "on"; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -77,7 +79,7 @@
         LCtrl_L {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 25>;
-            layers = <0 11>;
+            layers = <0 9>;
             slow-release;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
@@ -86,7 +88,7 @@
         LAlt_L {
             bindings = <&kp LEFT_ALT>;
             key-positions = <15 25>;
-            layers = <0 11>;
+            layers = <0 9>;
             slow-release;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
@@ -95,7 +97,7 @@
         LGUI_L {
             bindings = <&kp LEFT_GUI>;
             key-positions = <16 25>;
-            layers = <0 11>;
+            layers = <0 9>;
             slow-release;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
@@ -104,7 +106,7 @@
         MO_FUNC_L {
             bindings = <&mo 7>;
             key-positions = <37 16>;
-            layers = <0 2 3 5 8 10 13>;
+            layers = <0 2 3 5 8 12>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
@@ -113,7 +115,7 @@
         MO_FUNC_R {
             bindings = <&mo 8>;
             key-positions = <40 19>;
-            layers = <0 1 4 6 7 12 9>;
+            layers = <0 1 4 6 7 10>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
@@ -122,7 +124,7 @@
         MO_NAV_L {
             bindings = <&mo 4>;
             key-positions = <15 37>;
-            layers = <0 2 3 5 8 10 13>;
+            layers = <0 2 3 5 8 12>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
@@ -131,24 +133,24 @@
         MO_NUM_R {
             bindings = <&mo 5>;
             key-positions = <40 20>;
-            layers = <0 1 4 6 7 12 9>;
+            layers = <0 1 4 6 7 10>;
             slow-release;
             timeout-ms = <30>;
         };
 
-        MO_MODI_L {
-            bindings = <&mo 9>;
+        MO_MISC_L {
+            bindings = <&mo 11>;
             key-positions = <37 14>;
-            layers = <0 2 3 5 8 10 13>;
+            layers = <0 2 3 5 8 12>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
         };
 
-        MO_MODI_R {
-            bindings = <&mo 10>;
+        MO_MISC_R {
+            bindings = <&mo 12>;
             key-positions = <40 21>;
-            layers = <0 1 4 6 7 9 12>;
+            layers = <0 1 4 6 7 10>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
@@ -157,23 +159,23 @@
         MO_BRK_L {
             bindings = <&mo 6>;
             key-positions = <37 14 15>;
-            layers = <0 2 3 5 8 10 13>;
+            layers = <0 2 3 5 8 12>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
         };
 
         MO_NUMSP_L {
-            bindings = <&mo 12>;
+            bindings = <&mo 10>;
             key-positions = <13 14 37>;
-            layers = <0 2 3 5 8 10 13>;
+            layers = <0 2 3 5 8 12>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <30>;
         };
 
         MO_MOUSE {
-            bindings = <&mo 11>;
+            bindings = <&mo 9>;
             key-positions = <40 31>;
             layers = <0>;
             slow-release;
@@ -188,7 +190,7 @@
         };
 
         MO_SETTING {
-            bindings = <&mo 15>;
+            bindings = <&mo 14>;
             key-positions = <14 3 5 37>;
             require-prior-idle-ms = <0>;
             slow-release;
@@ -198,29 +200,20 @@
         bootload {
             bindings = <&bootloader>;
             key-positions = <5 29 29>;
-            layers = <15>;
+            layers = <14>;
         };
 
         sysreset {
             bindings = <&sys_reset>;
             key-positions = <4 14>;
-            layers = <15>;
-        };
-
-        MO_MISC_R {
-            bindings = <&mo 13>;
-            key-positions = <40 21 22>;
-            slow-release;
-            layers = <0 1 4 6 7 9 12>;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            layers = <14>;
         };
 
         LCTRL_SHFT_L {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <14 13>;
             slow-release;
-            layers = <0 11>;
+            layers = <0 9>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
         };
@@ -229,7 +222,7 @@
             bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <15 13>;
             slow-release;
-            layers = <0 11>;
+            layers = <0 9>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
         };
@@ -238,7 +231,7 @@
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <14 15>;
             slow-release;
-            layers = <0 11>;
+            layers = <0 9>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
         };
@@ -247,7 +240,7 @@
             bindings = <&kp LG(LEFT_SHIFT)>;
             key-positions = <16 13>;
             slow-release;
-            layers = <0 11>;
+            layers = <0 9>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
         };
@@ -256,7 +249,7 @@
             bindings = <&kp LG(LCTRL)>;
             key-positions = <14 16>;
             slow-release;
-            layers = <0 11>;
+            layers = <0 9>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
         };
@@ -272,7 +265,7 @@
             key-positions = <14 15 13>;
             slow-release;
             require-prior-idle-ms = <70>;
-            layers = <0 11>;
+            layers = <0 9>;
             timeout-ms = <30>;
         };
 
@@ -300,7 +293,7 @@
 
         RAlt_L {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <37 16 14>;
+            key-positions = <37 13>;
             layers = <0>;
             require-prior-idle-ms = <70>;
             timeout-ms = <30>;
@@ -311,7 +304,7 @@
             key-positions = <15 16>;
             slow-release;
             require-prior-idle-ms = <70>;
-            layers = <0 11>;
+            layers = <0 9>;
             timeout-ms = <30>;
         };
 
@@ -321,7 +314,21 @@
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <70>;
-            layers = <0 11>;
+            layers = <0 9>;
+        };
+
+        O_L {
+            bindings = <&kp O>;
+            key-positions = <21 20>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        OShift_R {
+            bindings = <&kp RS(O)>;
+            key-positions = <21 8>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
@@ -421,7 +428,7 @@
 &none  &kp Q              &kp W  &kp E             &kp R      &kp T              &kp Y    &kp U            &kp I        &kp O    &kp P                       &none
 &none  &hml LEFT_SHIFT A  &kp S  &kp D             &kp F      &kp G              &kp H    &kp J            &kp K        &kp L    &hmr RIGHT_SHIFT SEMICOLON  &none
 &none  &kp Z              &kp X  &kp C             &kp V      &kp B              &kp N    &kp M            &kp COMMA    &kp DOT  &kp SLASH                   &none
-                                 &lt 14 BACKSPACE  &lt 1 TAB  &lt_spc 4 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
+                                 &lt 13 BACKSPACE  &lt 1 TAB  &lt_spc 4 SPACE    &kp RET  &lt 2 RIGHT_ALT  &lt 3 RCTRL
             >;
         };
 
@@ -438,10 +445,10 @@
         NAV_R {
             display-name = "NAV_R";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp ENTER  &kp HOME        &kp UP_ARROW    &kp END          &kp RSHIFT     &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp TAB    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp ESC    &kp INSERT      &kp BACKSPACE   &kp DELETE       &kp PAGE_DOWN  &none
-                       &trans  &trans  &trans    &trans     &trans          &trans
+&none  &trans  &trans  &trans  &trans  &trans    &tog 2       &kp HOME          &kp UP_ARROW    &kp END            &kp PG_UP      &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp PG_DN    &kp LC(LG(LEFT))  &kp LG(TAB)     &kp LC(LG(RIGHT))  &kp LC(TAB)    &none
+                       &trans  &trans  &trans    &trans       &to 0             &trans
             >;
         };
 
@@ -458,20 +465,20 @@
         NAV_L {
             display-name = "NAV_L";
             bindings = <
-&none  &kp LSHIFT     &kp HOME        &kp UP_ARROW    &kp END          &kp ENTER    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB      &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp PAGE_DOWN  &kp INSERT      &kp BACKSPACE   &kp DELETE       &kp ESC      &trans  &trans  &trans  &trans  &trans  &none
-                                      &trans          &trans           &trans       &trans  &trans  &trans
+&none  &kp PG_UP      &kp HOME          &kp UP_ARROW    &kp END            &tog 4           &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PG_UP        &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LC(TAB)    &kp LC(LG(LEFT))  &kp LG(TAB)     &kp LC(LG(RIGHT))  &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &none
+                                        &trans          &to 0              &trans           &trans  &trans  &trans
             >;
         };
 
         NUM_R {
             display-name = "NUM_R";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp KP_EQUAL   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &TD_Equal_Mod  &none
+&none  &trans  &trans  &trans  &trans  &trans    &tog 5         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &TD_Equal_Mod  &none
 &none  &trans  &trans  &trans  &trans  &trans    &TD_Dot_Comma  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &TD_Add_Sub    &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &TD_Mul_Div    &none
-                       &trans  &trans  &trans    &trans         &trans        &trans
+                       &trans  &trans  &trans    &trans         &to 0         &trans
             >;
         };
 
@@ -505,52 +512,42 @@
             >;
         };
 
-        MODI_L {
-            display-name = "MODI_L";
-            bindings = <
-&none  &none           &none             &kp BACKSPACE  &kp DELETE  &kp ENTER    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LSHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LGUI    &kp TAB      &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp LEFT_SHIFT  &none             &none          &none       &kp ESC      &trans  &trans  &trans  &trans  &trans  &none
-                                         &trans         &trans      &trans       &trans  &trans  &trans
-            >;
-        };
-
-        MODI_R {
-            display-name = "MODI_R";
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp ENTER  &none         &kp BACKSPACE  &none             &none            &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp TAB    &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp RSHIFT       &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp ESC    &none         &none          &none             &kp RIGHT_SHIFT  &none
-                       &trans  &trans  &trans    &trans     &trans        &trans
-            >;
-        };
-
         MOUSE_LR {
             display-name = "MOUSE";
             bindings = <
-&none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &none         &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
-&none  &trans  &trans     &trans     &trans     &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
-&none  &trans  &trans     &trans     &trans     &trans    &none         &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp LCLK       &none
-                          &trans     &trans     &trans    &trans        &trans          &trans
+&none  &trans  &trans     &trans     &trans     &msc SCRL_UP      &tog 9        &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
+&none  &trans  &trans     &trans     &trans     &msc SCRL_DOWN    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+&none  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans            &none         &mkp LCLK       &mkp MCLK       &mkp RCLK        &mkp LCLK       &none
+                          &trans     &trans     &trans            &trans        &to 0           &trans
             >;
         };
 
         NUMSP_L {
             display-name = "NSP_L";
             bindings = <
-&none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &kp LS(SLASH)       &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LS(MINUS)     &kp LS(EQUAL)     &kp BACKSPACE     &kp DELETE        &tog 10             &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &none
-                                           &trans            &trans            &trans              &trans  &trans  &trans
+                                           &trans            &to 0             &trans              &trans  &trans  &trans
+            >;
+        };
+
+        MISC_L {
+            display-name = "MISC_L";
+            bindings = <
+&none  &trans         &kp PRINTSCREEN  &kp SCROLLLOCK      &kp PAUSE_BREAK  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp RIGHT_ALT  &kp LANGUAGE_1   &kp K_CONTEXT_MENU  &kp LANGUAGE_2   &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans         &kp INS          &kp CAPS            &kp KP_NUMLOCK   &trans    &trans  &trans  &trans  &trans  &trans  &none
+                                       &trans              &trans           &trans    &trans  &trans  &trans
             >;
         };
 
         MISC_R {
             display-name = "MISC_R";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &none      &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp RIGHT_ALT    &kp LANGUAGE_1  &kp K_APPLICATION  &kp LANG2  &none
-&none  &trans  &trans  &trans  &trans  &trans    &none   &kp INS          &kp CAPS        &kp KP_NUMLOCK     &none      &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp PAUSE_BREAK  &kp SCROLLLOCK      &kp PRINTSCREEN  &none     &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp LANGUAGE_2   &kp K_CONTEXT_MENU  &kp LANGUAGE_1   &kp RALT  &none
+&none  &trans  &trans  &trans  &trans  &trans    &none   &kp KP_NUMLOCK   &kp CAPS            &kp INS          &none     &none
                        &trans  &trans  &trans    &trans  &trans           &trans
             >;
         };
