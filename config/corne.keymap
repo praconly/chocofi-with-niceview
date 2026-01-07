@@ -422,6 +422,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
         hml_over_g: hml_over_g {
@@ -431,6 +432,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         hmr_over_semi: hmr_over_semi {
@@ -440,6 +442,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         hmr_over_h: hmr_over_h {
@@ -449,6 +452,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
