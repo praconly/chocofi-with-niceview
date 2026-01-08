@@ -333,6 +333,14 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+
+        MO_CUSTOM_L {
+            bindings = <&mo 15>;
+            key-positions = <37 1>;
+            layers = <0>;
+            slow-release;
+            timeout-ms = <30>;
+        };
     };
 
     behaviors {
@@ -613,6 +621,17 @@
 &none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &out OUT_TOG   &bt BT_CLR_ALL    &none      &none   &none   &none  &none  &none
                                      &trans         &trans         &kp SPACE         &kp ENTER  &trans  &trans
             >;
+        };
+
+        CUSTOM_L {
+            bindings = <
+&trans  &kp F24  &kp F21  &kp F18  &kp F15  &kp C_VOL_UP    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F23  &kp F20  &kp F17  &kp F14  &kp C_VOL_DN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F22  &kp F19  &kp F16  &kp F13  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans   &trans   &trans          &trans  &trans  &trans
+            >;
+
+            label = "CUSTOM";
         };
     };
 
