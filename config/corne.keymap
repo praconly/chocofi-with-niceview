@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -616,10 +617,10 @@
         SETTING_LR {
             display-name = "SET";
             bindings = <
-&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4     &none      &none   &none   &none  &none  &none
-&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &none      &none   &none   &none  &none  &none
-&none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &out OUT_TOG   &bt BT_CLR_ALL    &none      &none   &none   &none  &none  &none
-                                     &trans         &trans         &kp SPACE         &kp ENTER  &trans  &trans
+&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2      &bt BT_DISC 3  &bt BT_DISC 4     &none      &none   &none   &none  &none  &none
+&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3   &bt BT_SEL 4      &none      &none   &none   &none  &none  &none
+&none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT         &out OUT_TOG   &bt BT_CLR_ALL    &none      &none   &none   &none  &none  &none
+                                     &ext_power EP_TOG  &trans         &kp SPACE         &kp ENTER  &trans  &trans
             >;
         };
 
